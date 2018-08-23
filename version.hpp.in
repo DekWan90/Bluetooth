@@ -1,0 +1,28 @@
+#pragma once
+#ifndef VERSION_H
+#define VERSION_H
+
+#ifndef SIZEOF
+#define SIZEOF( X ) sizeof( X ) / sizeof( X[0] )
+#endif // SIZEOF
+
+// std
+#include <iostream>
+#include <cmath>
+
+// library
+
+// dekwan library
+
+
+#define FULL_VERSION "@PROJECT_NAME@ @PROJECT_VERSION@"
+#define @PROJECT_NAME@_VERSION "@PROJECT_VERSION@"
+#define @PROJECT_NAME@_VERSION_SHORT "@PROJECT_SOVERSION@"
+#define @PROJECT_NAME@_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define @PROJECT_NAME@_VERSION_MINOR @PROJECT_VERSION_MINOR@
+#define @PROJECT_NAME@_VERSION_RELEASE @PROJECT_VERSION_RELEASE@
+#define @PROJECT_NAME@_VERSION_BUILD @PROJECT_VERSION_BUILD@
+
+const std::string PROJEK_DIR = "$ENV{HOME}/.@PROJECT_NAME@/";
+
+#endif /* VERSION_H */
